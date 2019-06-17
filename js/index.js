@@ -39,33 +39,36 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]); 
 
 let headerImg = document.getElementById("cta-img"); 
-headerImg.setAttribute('src', siteContent["cta"]["img-src"])
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]); 
 
 let middleImg = document.getElementById("middle-img"); 
-middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]); 
 
+// Updated header text 
 let header1 = document.querySelector("h1"); 
-header1.textContent = siteContent["cta"]["h1"]
+header1.textContent = siteContent["cta"]["h1"]; 
 
+// Created nav bar and updated nav text 
 let navigation = document.querySelectorAll("nav a"); 
 for (let i = 0; i < navigation.length; i++) {
   navigation[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)]; 
   navigation[i].style.color = 'green';
-}
+}; 
 
+// Updated button text 
 let button = document.querySelector("button");
-button.textContent = siteContent["cta"]["button"]
+button.textContent = siteContent["cta"]["button"]; 
 
 // Jason's Code 
 let newElement = document.createElement('a');
 newElement.textContent= 'Home';
 
-let newElementTwo = document.createElement('a')
-newElementTwo.textContent = 'Sign Up'
+let newElementTwo = document.createElement('a'); 
+newElementTwo.textContent = 'Sign Up'; 
 
 const nav = document.querySelector('nav');
 nav.prepend(newElement);
-nav.append(newElementTwo)
+nav.append(newElementTwo); 

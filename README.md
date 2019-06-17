@@ -20,8 +20,8 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 
 **Follow these steps for completing your project.**
 
-* [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-* [ ] Add your project manager as a reviewer on the pull-request
+* [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [x] Add your project manager as a reviewer on the pull-request
 * [ ] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Task 1: Create selectors to point your data into elements
@@ -29,7 +29,7 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 * [x] Note that IDs have been used on all images.  Use the IDs to update src path content
 
 ## Task 2: Update the HTML with the JSON data
-* [ ] Remember, NO direct updating of the HTML source is allowed.
+* [x] Remember, NO direct updating of the HTML source is allowed.
 * [ ] Using your selectors, update the content to match the example file.
 * [ ] Remember to update the src attributes on images
 
