@@ -38,5 +38,66 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+const logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]); 
+
+const headerImg = document.getElementById("cta-img"); 
+headerImg.setAttribute('src', siteContent["cta"]["img-src"]); 
+
+const middleImg = document.getElementById("middle-img"); 
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]); 
+
+// Updated header text 
+const header1 = document.querySelector("h1"); 
+header1.textContent = siteContent["cta"]["h1"]; 
+
+// Created nav bar and updated nav text 
+const navigation = document.querySelectorAll("nav a"); 
+for (let i = 0; i < navigation.length; i++) {
+  navigation[i].textContent = siteContent["nav"]["nav-item-" + (i + 1)]; 
+  navigation[i].style.color = 'green';
+}; 
+
+// Updated button text 
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"]; 
+
+// Updated all text within main content 
+const textContent = document.querySelectorAll("p"); 
+textContent[0].textContent = siteContent["main-content"]["features-content"]; 
+textContent[1].textContent = siteContent["main-content"]["about-content"]; 
+textContent[2].textContent = siteContent["main-content"]["services-content"]; 
+textContent[3].textContent = siteContent["main-content"]["product-content"]; 
+textContent[4].textContent = siteContent["main-content"]["vision-content"]; 
+
+// Updated text within contact 
+textContent[5].textContent = siteContent["contact"]["address"];
+textContent[6].textContent = siteContent["contact"]["phone"];
+textContent[7].textContent = siteContent["contact"]["email"];
+
+// Updated text within footer 
+textContent[8].textContent = siteContent["footer"]["copyright"]
+
+// Updated all h4 titles 
+const header4 = document.querySelectorAll("h4"); 
+header4[0].textContent = siteContent["main-content"]["features-h4"]; 
+header4[1].textContent = siteContent["main-content"]["about-h4"]; 
+header4[2].textContent = siteContent["main-content"]["services-h4"]; 
+header4[3].textContent = siteContent["main-content"]["product-h4"]; 
+header4[4].textContent = siteContent["main-content"]["vision-h4"]; 
+header4[5].textContent = siteContent["contact"]["contact-h4"]
+
+
+// let contactH4 = document.querySelector("h4.contact"); 
+// contactH4.textContent = siteContent["contact"]["contact-h4"]; 
+
+// Jason's Code 
+let newElement = document.createElement('a');
+newElement.textContent= 'Home';
+
+let newElementTwo = document.createElement('a'); 
+newElementTwo.textContent = 'Sign Up'; 
+
+const nav = document.querySelector('nav');
+nav.prepend(newElement);
+nav.append(newElementTwo); 
